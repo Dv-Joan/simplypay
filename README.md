@@ -1,1 +1,1 @@
-![Preview](https://imgur.com/lSBhKE2)
+![Preview](/public/repo-cover.jpg)
