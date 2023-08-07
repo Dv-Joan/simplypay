@@ -1,7 +1,7 @@
 import QRIcon from "../assets/images/qr-code.png";
 import SendIcon from "../assets/images/send.png";
 import CreditCard from "../components/ui/overview/credit-card";
-import Receiver from "../components/ui/overview/receiver";
+import Receivers from "../components/ui/overview/receivers";
 import RightIcon from "../assets/images/next.png";
 import Contacts from "../components/ui/overview/contacts";
 import Payments from "../components/ui/overview/payments";
@@ -60,7 +60,7 @@ function Overview() {
           </div>
         </div>
       </div>
-      <Receiver />
+      <Receivers />
     </div>
   );
 }
