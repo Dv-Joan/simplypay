@@ -12,13 +12,13 @@ function Overview() {
           </h5>
         </div>
         <div className="flex gap-3">
-          <button className="border-[#0917EA] border-2 rounded-2xl p-3">
+          <button className="border-[#0917EA] active:bg-[#D4D7FB]  hover:scale-105 duration-150 hover:bg-[#E2E4FC] border-2 rounded-2xl p-3">
             <img src={QRIcon} alt="qr" width={20} />
           </button>
-          <button className="border-[#0917EA]  border-2 px-7 rounded-2xl p-3">
+          <button className="border-[#0917EA] active:bg-[#D4D7FB]  hover:scale-105 duration-150 hover:bg-[#E2E4FC]  border-2 px-7 rounded-2xl p-3">
             Receive
           </button>
-          <button className="bg-[#0917EA] flex gap-4 items-center text-white px-10 rounded-2xl p-3">
+          <button className="bg-[#0917EA] active:bg-[#0611a7] hover:scale-105 duration-150 flex gap-4 items-center text-white px-10 rounded-2xl p-3">
             Send
             <img src={SendIcon} alt="qr" width={15} />
           </button>

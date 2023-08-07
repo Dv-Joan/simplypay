@@ -9,39 +9,30 @@ function Header() {
           alt="logo"
           className="w-10 h-10"
         />
-        <h1 className="ml-2 text-2xl font-bold">Simplypay</h1>
+        <p className="ml-2 text-2xl font-bold">
+          simply
+          <span className="text-[#0917EA]">pay</span>
+        </p>
       </div>
       <nav className="flex justify-center gap-4">
-        <ul className="flex items-center">
+        <ul className="flex items-center text-sm text-slate-500">
           <li className="mr-6">
-            <a
-              className="text-slate-500 text-sm hover:text-[#1431ED] font-bold"
-              href="/"
-            >
+            <a className="hover:text-[#0917EA] " href="/">
               Overview
             </a>
           </li>
           <li className="mr-6">
-            <a
-              className="text-slate-500 text-sm hover:text-[#1431ED] font-bold"
-              href="/"
-            >
+            <a className=" hover:text-[#0917EA]  " href="/">
               Activity
             </a>
           </li>
           <li className="mr-6">
-            <a
-              className="text-slate-500 text-sm hover:text-[#1431ED] font-bold"
-              href="/"
-            >
+            <a className=" hover:text-[#0917EA]  " href="/">
               Payment{" "}
             </a>
           </li>
           <li className="mr-6">
-            <a
-              className="text-slate-500 text-sm hover:text-[#1431ED] font-bold"
-              href="/"
-            >
+            <a className=" hover:text-[#0917EA]  " href="/">
               Help Center
             </a>
           </li>
