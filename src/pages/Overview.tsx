@@ -10,7 +10,7 @@ function Overview() {
     <div className="py-16 space-y-12 px-44">
       <div className="flex items-center justify-between">
         <div className="space-y-3">
-          <h3 className="text-xl font-bold">Welcome back, Octavia !</h3>
+          <h3 className="text-xl font-bold">Welcome back, William !</h3>
           <h5 className="text-[12px] text-slate-600">
             Here's your account overview today, take a moment to have a look fot
             this.
@@ -29,27 +29,40 @@ function Overview() {
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-4 ">
-        <CreditCard />
-        <div className="row-span-2 border-2 space-y-7 p-7 rounded-3xl ">
-          <div className="space-y-3">
-            <p className="flex items-baseline justify-between">
-              <h3 className="text-[18px] font-semibold">Send Again</h3>
-              <a
-                className="flex items-center text-sm font-semibold text-blue-500 gap-7 duration "
-                href="/contacts"
-              >
-                See Contacts
-                <img src={RightIcon} alt="go" width={8} />
-              </a>
-            </p>
-            <Contacts />
-          </div>
+      <div className="flex justify-between">
+        <div>
+          <CreditCard />
+          <p className="flex items-baseline justify-between mt-10 mb-4">
+            <h3 className="font-semibold ">Recent Money Transfer</h3>
+            <a
+              className="flex items-center  font-semibold text-blue-500 text-[12px] gap-7 duration "
+              href="/payments"
+            >
+              See my activity
+              <img src={RightIcon} alt="go" width={8} />
+            </a>
+          </p>
+          <Receivers />
+        </div>
+
+        <div className="border-2 p-7 rounded-3xl w-[430px] ">
+          <p className="flex items-baseline justify-between mb-4">
+            <h3 className="font-semibold ">Send Again</h3>
+            <a
+              className="flex items-center text-[12px] font-semibold text-blue-500 gap-7 duration "
+              href="/contacts"
+            >
+              See Contacts
+              <img src={RightIcon} alt="go" width={8} />
+            </a>
+          </p>
+          <Contacts />
+
           <div>
-            <p className="flex items-baseline justify-between">
-              <h3 className="text-[18px] font-semibold">Recent Payments</h3>
+            <p className="flex items-baseline justify-between mt-10 mb-4">
+              <h3 className="font-semibold ">Recent Payments</h3>
               <a
-                className="flex items-center text-sm font-semibold text-blue-500 gap-7 duration "
+                className="flex items-center text-[12px] font-semibold text-blue-500 gap-7 duration "
                 href="/payments"
               >
                 See Payments
@@ -60,7 +73,14 @@ function Overview() {
           </div>
         </div>
       </div>
-      <Receivers />
+      <footer className="flex justify-between text-sm text-slate-500">
+        <h3>@ 2023 joanpaucar</h3>
+        <div className="flex gap-3">
+          <a href="/privacy">Privacy</a>
+
+          <a href="/legal">Legal</a>
+        </div>
+      </footer>
     </div>
   );
 }

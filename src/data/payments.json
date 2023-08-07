@@ -1,0 +1,51 @@
+[
+  {
+    "id": "1",
+    "company": "Apple",
+    "date": "1 minute ago",
+    "amount": 170.58,
+    "exchange": "USD",
+    "companyLogo": "https://cdn-icons-png.flaticon.com/128/731/731985.png",
+    "message": "Your welcome to come again!",
+    "type": "income"
+  },
+  {
+    "id": "2",
+    "company": "Spotify",
+    "date": "Today, 10:15 AM",
+    "amount": 5.78,
+    "exchange": "EUR",
+    "companyLogo": "https://cdn-icons-png.flaticon.com/128/3669/3669986.png",
+    "message": "One month more with the best music!",
+    "type": "expense"
+  },
+  {
+    "id": "3",
+    "company": "Uber",
+    "date": "Yesterday",
+    "amount": 150.4,
+    "exchange": "USD",
+    "companyLogo": "https://cdn-icons-png.flaticon.com/128/5969/5969324.png",
+    "message": "This keyboard is awesome!",
+    "type": "income"
+  },
+  {
+    "id": "4",
+    "company": "VISA",
+    "date": "3 days ago",
+    "amount": 18.55,
+    "exchange": "USD",
+    "companyLogo": "https://cdn-icons-png.flaticon.com/128/217/217425.png",
+    "message": "I love those cookies, than you!",
+    "type": "expense"
+  },
+  {
+    "id": "5",
+    "company": "Paypal",
+    "date": "2022-05-01",
+    "amount": 251.01,
+    "exchange": "EUR",
+    "companyLogo": "https://cdn-icons-png.flaticon.com/128/1377/1377239.png",
+    "message": "I will pay you back, I promise"
+  }
+]

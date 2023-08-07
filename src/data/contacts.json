@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1",
+    "name": "John",
+    "email": "john@doe.com",
+    "phone": "555-1234",
+    "type": "personal",
+    "profileImage": "https://randomuser.me/api/portraits/men/1.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Jane",
+    "email": "jane@doe.com",
+    "phone": "555-5678",
+    "type": "work",
+    "profileImage": "https://randomuser.me/api/portraits/women/1.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Bob",
+    "phone": "555-9101",
+    "type": "other",
+    "profileImage": "https://randomuser.me/api/portraits/men/2.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Maria",
+    "email": "maria@garcia.com",
+    "type": "personal",
+    "profileImage": "https://randomuser.me/api/portraits/women/2.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Carlos",
+    "phone": "555-1212",
+    "type": "work",
+    "profileImage": "https://randomuser.me/api/portraits/men/3.jpg"
+  }
+]

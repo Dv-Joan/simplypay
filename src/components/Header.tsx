@@ -26,7 +26,7 @@ const NavLinks = [
 function Header() {
   return (
     <div className="flex justify-between px-16 py-5 bg-white">
-      <div className="flex items-center cursor-pointer">
+      <a href="/" className="flex items-center cursor-pointer">
         <img
           src="https://cdn-icons-png.flaticon.com/128/10452/10452806.png"
           alt="logo"
@@ -36,12 +36,12 @@ function Header() {
           simply
           <span className="text-[#0917EA]">pay</span>
         </p>
-      </div>
-      <ul className="flex items-center gap-5 text-sm text-slate-500">
+      </a>
+      <ul className="flex items-center text-[13px] text-slate-500">
         {NavLinks.map((NavLink) => (
-          <li key={NavLink.value}>
+          <li key={NavLink.value} className="w-20 ">
             <a
-              className="hover:text-[#0917EA] hover:font-semibold duration "
+              className="hover:text-[#0917EA] hover:font-semibold duration-300  "
               href={NavLink.href}
             >
               {NavLink.name}

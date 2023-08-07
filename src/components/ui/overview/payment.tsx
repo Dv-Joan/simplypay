@@ -1,8 +1,7 @@
-import { Payment } from "@/types/payment";
-import React from "react";
+import { IPayment } from "@/types";
 import NextIcon from "./../../../assets/images/next.png";
 
-function Payment(payment: Payment) {
+function Payment(payment: IPayment) {
   const { company, date, amount, exchange, companyLogo } = payment;
   return (
     <div className="flex items-center justify-between px-3 py-5 duration-150 shadow-md hover:scale-105 rounded-3xl">

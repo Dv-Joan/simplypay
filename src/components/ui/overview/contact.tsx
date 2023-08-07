@@ -1,7 +1,6 @@
-import { Contact } from "@/types";
-interface ContactItemProps extends Contact {}
+import { IContact } from "@/types";
 
-function ContactProfile(contact: ContactItemProps) {
+function ContactProfile(contact: IContact) {
   const { profileImage, name } = contact;
   return (
     <div className="w-12 text-center duration-150 cursor-pointer hover:scale-105">

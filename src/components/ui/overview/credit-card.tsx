@@ -4,7 +4,7 @@ import Graph from "./graph";
 
 function CreditCard() {
   return (
-    <div className=" h-64 bg-gradient-to-tl from-gray-800 via-gray-400 to-black hover:bg-blue-600 duration-700 w-[460px] text-white rounded-3xl grid grid-cols-2 justify-between p-7">
+    <div className=" h-64 bg-gradient-to-tl from-gray-800 via-gray-400 to-black hover:bg-blue-600 duration-700 w-[500px] text-white rounded-3xl grid grid-cols-2 justify-between p-7">
       <div className="space-y-3">
         <h3 className="text-sm">Balance</h3>
         <p className="flex items-center gap-3">
@@ -25,7 +25,7 @@ function CreditCard() {
         </a>
       </div>
       <div className="flex flex-col col-span-2 ">
-        <h3 className="text-[11px] mt-5">This Month</h3>
+        <h3 className="text-[11px] ">This Month</h3>
         <div className="flex justify-between">
           <Graph />
           <div className="space-y-5">
