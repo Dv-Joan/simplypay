@@ -4,9 +4,9 @@ interface ContactItemProps extends Contact {}
 function ContactProfile(contact: ContactItemProps) {
   const { profileImage, name } = contact;
   return (
-    <div className="w-12 text-center ">
+    <div className="w-12 text-center duration-150 cursor-pointer hover:scale-105">
       <img
-        className="rounded-full"
+        className="border-2 rounded-full border-slate-400"
         src={profileImage}
         alt="contact"
         width={50}

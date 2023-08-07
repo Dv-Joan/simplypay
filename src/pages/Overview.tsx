@@ -1,13 +1,13 @@
 import QRIcon from "../assets/images/qr-code.png";
 import SendIcon from "../assets/images/send.png";
-import Contact from "../components/ui/overview/contacts";
 import CreditCard from "../components/ui/overview/credit-card";
-import Payment from "../components/ui/overview/payment";
 import Receiver from "../components/ui/overview/receiver";
 import RightIcon from "../assets/images/next.png";
+import Contacts from "../components/ui/overview/contacts";
+import Payments from "../components/ui/overview/payments";
 function Overview() {
   return (
-    <div className="py-16 px-44">
+    <div className="py-16 space-y-12 px-44">
       <div className="flex items-center justify-between">
         <div className="space-y-3">
           <h3 className="text-xl font-bold">Welcome back, Octavia !</h3>
@@ -29,10 +29,10 @@ function Overview() {
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 gap-4 ">
         <CreditCard />
-        <div className="row-span-2 border-2 p-7 rounded-2xl">
-          <div>
+        <div className="row-span-2 border-2 space-y-7 p-7 rounded-3xl ">
+          <div className="space-y-3">
             <p className="flex items-baseline justify-between">
               <h3 className="text-[18px] font-semibold">Send Again</h3>
               <a
@@ -43,7 +43,7 @@ function Overview() {
                 <img src={RightIcon} alt="go" width={8} />
               </a>
             </p>
-            <Contact />
+            <Contacts />
           </div>
           <div>
             <p className="flex items-baseline justify-between">
@@ -52,11 +52,11 @@ function Overview() {
                 className="flex items-center text-sm font-semibold text-blue-500 gap-7 duration "
                 href="/payments"
               >
-                See Payment
+                See Payments
                 <img src={RightIcon} alt="go" width={8} />
               </a>
             </p>
-            <Payment />
+            <Payments />
           </div>
         </div>
       </div>
