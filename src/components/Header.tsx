@@ -1,9 +1,32 @@
 import React from "react";
 
+const NavLinks = [
+  {
+    name: "Overview",
+    value: "overview",
+    href: "/overview",
+  },
+  {
+    name: "Activity",
+    value: "activity",
+    href: "/activity",
+  },
+  {
+    name: "Payment",
+    value: "payment",
+    href: "/payment",
+  },
+  {
+    name: "Help Center",
+    value: "help",
+    href: "/help",
+  },
+];
+
 function Header() {
   return (
     <div className="flex justify-between px-16 py-5 bg-white">
-      <div className="flex items-center">
+      <div className="flex items-center cursor-pointer">
         <img
           src="https://cdn-icons-png.flaticon.com/128/10452/10452806.png"
           alt="logo"
@@ -14,30 +37,18 @@ function Header() {
           <span className="text-[#0917EA]">pay</span>
         </p>
       </div>
-      <nav className="flex justify-center gap-4">
-        <ul className="flex items-center text-sm text-slate-500">
-          <li className="mr-6">
-            <a className="hover:text-[#0917EA] " href="/">
-              Overview
+      <ul className="flex items-center gap-5 text-sm text-slate-500">
+        {NavLinks.map((NavLink) => (
+          <li key={NavLink.value}>
+            <a
+              className="hover:text-[#0917EA] hover:font-semibold duration "
+              href={NavLink.href}
+            >
+              {NavLink.name}
             </a>
           </li>
-          <li className="mr-6">
-            <a className=" hover:text-[#0917EA]  " href="/">
-              Activity
-            </a>
-          </li>
-          <li className="mr-6">
-            <a className=" hover:text-[#0917EA]  " href="/">
-              Payment{" "}
-            </a>
-          </li>
-          <li className="mr-6">
-            <a className=" hover:text-[#0917EA]  " href="/">
-              Help Center
-            </a>
-          </li>
-        </ul>
-      </nav>
+        ))}
+      </ul>
       <div className="flex items-center gap-5">
         <button>
           <img

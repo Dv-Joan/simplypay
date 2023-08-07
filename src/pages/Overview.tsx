@@ -1,5 +1,10 @@
 import QRIcon from "../assets/images/qr-code.png";
 import SendIcon from "../assets/images/send.png";
+import Contact from "../components/ui/overview/contacts";
+import CreditCard from "../components/ui/overview/credit-card";
+import Payment from "../components/ui/overview/payment";
+import Receiver from "../components/ui/overview/receiver";
+import RightIcon from "../assets/images/next.png";
 function Overview() {
   return (
     <div className="py-16 px-44">
@@ -24,6 +29,38 @@ function Overview() {
           </button>
         </div>
       </div>
+      <div className="grid grid-cols-2 gap-4">
+        <CreditCard />
+        <div className="row-span-2 border-2 p-7 rounded-2xl">
+          <div>
+            <p className="flex items-baseline justify-between">
+              <h3 className="text-[18px] font-semibold">Send Again</h3>
+              <a
+                className="flex items-center text-sm font-semibold text-blue-500 gap-7 duration "
+                href="/contacts"
+              >
+                See Contacts
+                <img src={RightIcon} alt="go" width={8} />
+              </a>
+            </p>
+            <Contact />
+          </div>
+          <div>
+            <p className="flex items-baseline justify-between">
+              <h3 className="text-[18px] font-semibold">Recent Payments</h3>
+              <a
+                className="flex items-center text-sm font-semibold text-blue-500 gap-7 duration "
+                href="/payments"
+              >
+                See Payment
+                <img src={RightIcon} alt="go" width={8} />
+              </a>
+            </p>
+            <Payment />
+          </div>
+        </div>
+      </div>
+      <Receiver />
     </div>
   );
 }
